@@ -1,0 +1,116 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body h1 {
+    font-size: 64px;
+    text-align: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+.wrapper {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper .search-box {
+    margin-top: 50px;
+    padding: 25px 100px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background-color: black;
+}
+.wrapper .search-box input, .wrapper .search-box button {
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .search-box button:hover {
+    color: rgb(0, 136, 226);
+}
+.wrapper .search-box button {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.search-query {
+    margin-top: 20px;
+}
+.results {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.results .card {
+    margin: 10px;
+    padding: 15px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+    height: auto;
+    width: 300px;
+}
+.results .card img {
+    height: 200px;
+    width: 200px;
+}
+.results .card .song-title {
+    font-weight: 600;
+}
+.results .card .song-artists {
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    body h1 {
+        font-size: 48px;
+    }
+    .wrapper .search-box {
+        margin-top: 15px;
+        padding: 15px 25px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    body h1 {
+        font-size: 36px;
+    }
+    .wrapper .search-box {
+        margin-top: 15px;
+    }
+    .wrapper .search-box input {
+        font-size: 26px;
+        width: 360px;
+    }
+    .wrapper .search-box button {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .wrapper .search-box input, .wrapper .search-box button {
+        font-size: 20px;
+    }
+    .wrapper .search-box input {
+        width: 280px;
+    }
+}
