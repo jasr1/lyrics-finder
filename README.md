@@ -25,7 +25,9 @@ Lyrics Finder enables users to search for song lyrics by typing in either a song
 ## Live Demo
 
 Check out the [live demo here](https://jasr1.github.io/lyrics-finder/) to experience the app in action.  
-The frontend is hosted on **GitHub Pages**, and it communicates with the backend hosted on **Render** to securely fetch results from the Genius API.
+The frontend is hosted on **GitHub Pages**, and it communicates with the backend hosted on **Render** to securely fetch results from the Genius API. 
+
+Since I am using the free tier of Render, the backend spins down after periods of inactivity. As such, your first request may take upwards of 30 seconds. After that, each subsequent request will be sent immediately.
 
 
 ## Technologies Used
